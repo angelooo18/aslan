@@ -119,7 +119,6 @@ own licenses.
 
 Gracias a los autores y mantenedores de estos proyectos, que hacen posible ASLAN:
 
-- [pi-observational-memory (angelooo18)](https://github.com/angelooo18/pi-observational-memory) — fork de ASLAN con el fix de consolidación.
 - [pi-interactive-subagents (amosblomqvist)](https://github.com/amosblomqvist/pi-interactive-subagents) — runtime de subagentes vendorizado.
 - [pi-observational-memory (amosblomqvist)](https://github.com/amosblomqvist/pi-observational-memory) — proyecto original de Observational Memory.
 - [humanlayer/humanlayer](https://github.com/humanlayer/humanlayer) — patrones de aprobación human-in-the-loop que inspiraron los gates de plan y permisos de ASLAN.
