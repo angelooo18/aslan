@@ -114,3 +114,13 @@ ASLAN is MIT licensed. The vendored subagent and observational-memory packages a
 licensed by Amos Blomqvist; see `THIRD_PARTY_NOTICES.md` and the vendored `LICENSE` files.
 Mermaid and the local extensions are part of ASLAN. External npm dependencies keep their
 own licenses.
+
+## Agradecimientos y referencias / Acknowledgements and references
+
+Gracias a los autores y mantenedores de estos proyectos, que hacen posible ASLAN:
+
+- [pi-observational-memory (angelooo18)](https://github.com/angelooo18/pi-observational-memory) — fork de ASLAN con el fix de consolidación.
+- [pi-interactive-subagents (amosblomqvist)](https://github.com/amosblomqvist/pi-interactive-subagents) — runtime de subagentes vendorizado.
+- [pi-observational-memory (amosblomqvist)](https://github.com/amosblomqvist/pi-observational-memory) — proyecto original de Observational Memory.
+
+Thank you to the authors and maintainers of these projects.
