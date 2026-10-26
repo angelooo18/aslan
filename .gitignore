@@ -1,0 +1,14 @@
+node_modules/
+**/node_modules/
+*.log
+.DS_Store
+
+# Private pi state that must never be committed
+auth.json
+sessions/
+permissions-audit.jsonl
+trust.json
+.memory/
+viz/
+.profile/
+extensions/browser/.profile/

@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "maxConcurrentSubagents": 6,
+  "maxSpawnPerTurn": 3,
+  "maxDepth": 2
+}

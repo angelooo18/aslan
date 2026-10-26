@@ -1,0 +1,4 @@
+node_modules/
+viz/
+*.log
+.DS_Store

@@ -1,0 +1,64 @@
+{
+  "name": "aslan",
+  "version": "1.0.0",
+  "description": "ASLAN — a self-contained pi agent stack: DeepSeek subagents, browser, search, permissions, limits, mermaid, and observational memory.",
+  "type": "module",
+  "license": "MIT",
+  "author": "ASLAN contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angelooo18/aslan"
+  },
+  "keywords": [
+    "pi-package",
+    "aslan",
+    "pi",
+    "deepseek",
+    "subagents",
+    "browser",
+    "mermaid",
+    "observational-memory"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "pi": {
+    "extensions": [
+      "./vendor/pi-interactive-subagents/pi-extension/subagents/index.ts",
+      "./extensions/subagent-limits.ts",
+      "./extensions/permissions.ts",
+      "./extensions/deepseek-search.ts",
+      "./extensions/browser/index.ts",
+      "./vendor/pi-observational-memory/src/index.ts",
+      "./vendor/mermaid/index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-agent-core": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "dependencies": {
+    "@mermaid-js/mermaid-cli": "^12.0.0",
+    "playwright": "^1.64.1",
+    "puppeteer": "^25.0.0",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-agent-core": "^0.74.0",
+    "@earendil-works/pi-ai": "^0.74.0",
+    "@earendil-works/pi-coding-agent": "^0.74.0",
+    "@earendil-works/pi-tui": "^0.74.0",
+    "@types/node": "^22.0.0",
+    "typebox": "^1.1.38",
+    "typescript": "^5.6.0",
+    "vitest": "^4.1.5"
+  },
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "test": "cd vendor/pi-observational-memory && npx vitest run",
+    "typecheck": "cd vendor/pi-observational-memory && npx tsc --noEmit"
+  }
+}

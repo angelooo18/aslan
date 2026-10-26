@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "headless": "deny",
+  "auditLog": true,
+  "allow": []
+}

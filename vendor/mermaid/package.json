@@ -1,0 +1,33 @@
+{
+  "name": "pi-mermaid-tools",
+  "version": "1.0.0",
+  "description": "Mermaid diagrams on demand for pi: one render_mermaid tool producing PNG, SVG, or JPG, returned inline.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "mermaid",
+    "diagram",
+    "visualization"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "dependencies": {
+    "@mermaid-js/mermaid-cli": "^12.0.0",
+    "puppeteer": "^24.0.0",
+    "sharp": "^0.34.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "smoke": "node scripts/smoke.mjs"
+  }
+}

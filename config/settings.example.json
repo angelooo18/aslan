@@ -1,0 +1,32 @@
+{
+  "defaultProvider": "deepseek",
+  "defaultModel": "deepseek-flash",
+  "enabledModels": [
+    "deepseek/deepseek-flash"
+  ],
+  "defaultThinkingLevel": "max",
+  "observational-memory": {
+    "chunkTokens": 10000,
+    "chunkOverlapTokens": 0,
+    "poolTargetTokens": 10000,
+    "consolidateAtPoolTokens": 15000,
+    "compactAtContextTokens": 600000,
+    "tailTokens": 20000,
+    "journeyTargetTokens": 1000,
+    "observerConcurrency": 4,
+    "models": {
+      "observer": {
+        "provider": "deepseek",
+        "id": "deepseek-flash",
+        "thinking": "low"
+      },
+      "consolidator": {
+        "provider": "deepseek",
+        "id": "deepseek-flash",
+        "thinking": "high"
+      }
+    },
+    "passive": false,
+    "debugLog": false
+  }
+}
